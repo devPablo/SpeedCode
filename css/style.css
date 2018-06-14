@@ -1,0 +1,124 @@
+/* Color Palette */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+  cursor: default;
+}
+
+
+span {
+  font-size: 20px;
+  color: #009688;
+}
+
+#invisibleInput {
+  cursor: default;
+  font-size: 0;
+  border: none;
+  position: absolute;
+}
+
+.initial {
+  color: #636D83;
+}
+
+.char-active {
+  background-color: #009688;
+  color: #FFF;
+}
+
+.w {
+  color: #F44336;
+}
+
+
+
+#code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  
+}
+
+pre {
+  display: inline-block;
+  position: relative;
+  margin: 0 50px;
+  padding: 25px;
+  white-space: pre;
+  letter-spacing: 0.5px;
+  line-height: 6.5mm;
+}
+
+.e::before {
+  content: '⏎';
+  margin-left: -2px;
+  margin-top: -1.5px;
+  color: #FFF;
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  width: 25px;
+  border:2px solid #171820;
+  outline: 3px solid #171820;
+  outline-offset: -4px;
+  background-color: #009688;
+}
+
+.ew::before {
+  content: '⏎';
+  margin-left: -2px;
+  margin-top: -1.5px;
+  color: #FFF;
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  width: 25px;
+  border:2px solid #171820;
+  outline: 3px solid #171820;
+  outline-offset: -4px;
+  background-color: #F44336;
+}
+
+
+
+
+
+aside {
+  background-color: #21252B;
+  width: 250px;
+  height: 730px;
+  float: left;
+}
+
+#mainPane {
+  float: right;
+  width: 83.5%;
+  height: 730px;
+  background-color: #171820;
+  overflow: scroll;
+}
+
+#numberPane {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 705px;
+  margin-top: 25px;
+  margin-left: 25px;
+  float: left;
+}
+
+#numberPane span { 
+  color: #636D83;
+  margin: 0.635mm 0;
+}
+
+.lineNumber {
+  display: block;
+  float: right;
+}
